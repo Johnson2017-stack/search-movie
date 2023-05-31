@@ -2,26 +2,32 @@
     margin: 8;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: ivory;
 }
+
 nav {
     width: 100%;
     background-color: red;
     margin-bottom: 1rem;
 }
+
 searchInput{
 width: 30vw;
 }
+
 #search-input::placeholder{
     color: red;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -32,5 +38,12 @@ width: 30vw;
 
 }
 .container .info{
-    
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
 }
