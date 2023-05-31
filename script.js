@@ -21,7 +21,6 @@ fetch(apiUrl).then(res => res.json()) .then(data => {
     let poster = document.createElement("img");
     poster.src = data.Poster;
 
-    
     let title = document.createElement("p");
     title.textContent = data.Title;
 
@@ -29,17 +28,18 @@ fetch(apiUrl).then(res => res.json()) .then(data => {
     year.textContent = data.Year;
 
     let rated = document.createElement("p");
-    rated.textContent = "Rated"; + data.Rated;
+    rated.textContent = "Rated" + data.Rated;
 
     let released = document.createElement("p")
-    released.textContent = "Released"; + data.Released;
+    released.textContent = "Released" + data.Released;
 
     let runtime = document.createElement("p")
-    runtime.textContent = "Runtime"; + data.Runtime;
+    runtime.textContent = "Runtime" + data.Runtime;
+
 
     img.appendChild(poster);
     info.appendChild(title, year, rated, released, runtime);
-    container.append(poster, title, year)
+    container.append(poster, title, year, rated, released, runtime);
 });
 searchInput.value = "";
 }

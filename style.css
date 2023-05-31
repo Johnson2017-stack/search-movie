@@ -16,12 +16,14 @@ body{
 
 nav {
     width: 100%;
-    background-color: red;
+    background-color: rgba(194, 2, 2, 0.833);
     margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 searchInput{
-width: 30vw;
+width: 30vw; 
 }
 
 #search-input::placeholder{
